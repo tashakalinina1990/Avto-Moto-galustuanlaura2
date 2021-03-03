@@ -1,0 +1,46 @@
+.page-header,
+.page-footer {
+  background-color: $background-color;
+}
+
+.page-header__wrapper,
+.page-content,
+.page-footer__wrapper {
+  display: flex;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding-right: 18.5px;
+  padding-left: 18.5px;
+}
+
+.page-header__wrapper {
+  justify-content: space-between;
+  align-items: center;
+  min-height: 84px;
+  padding-left: 24.5px;
+}
+
+.page-content {
+  padding-top: 74px;
+  padding-bottom: 131px;
+  flex-wrap: wrap;
+}
+
+.page-content__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__wrapper {
+  align-items: center;
+  min-height: 82px;
+  padding-left: 24.5px;
+}
+
+@media (max-width: $content-wrapper-width) {
+  .page-content__wrapper {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
